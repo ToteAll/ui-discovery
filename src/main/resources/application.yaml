@@ -3,6 +3,9 @@ spring:
     gateway:
       routes:
         - id: user-service
-          uri: http://localhost:8081
+          uri: http://localhost:8080
           predicates:
             - Path=/user-api/**
+
+server:
+  port: 9999
