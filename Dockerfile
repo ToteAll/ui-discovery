@@ -1,6 +1,6 @@
 FROM alpine/java:21
 
-COPY ./build/libs/locations-0.0.1-SNAPSHOT.jar application.jar
+COPY ./build/libs/ui-discovery-0.0.1-SNAPSHOT.jar application.jar
 
 EXPOSE 9999
 
