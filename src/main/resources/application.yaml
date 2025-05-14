@@ -3,13 +3,13 @@ spring:
     gateway:
       routes:
         - id: user-service
-          #uri: http://user-service
-          uri: http://localhost:8080
+          uri: http://user-service
+        # uri: http://localhost:8080
           predicates:
             - Path=/user-api/**
         - id: product-service
         #  uri: http://localhost:8082
-          uri: http://product-service
+          uri: http://products-service
           predicates:
             - Path=/products-api/**
         - id: locations-service
