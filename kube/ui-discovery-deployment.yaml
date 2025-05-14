@@ -18,11 +18,6 @@ spec:
           imagePullPolicy: Always
           ports:
             - containerPort: 8081  # Port where Spring Boot is running
-          env:
-            - name: SPRING_DATASOURCE_URL
-              value: jdbc:postgresql://postgres-service:5432/retail  # Replace with PostgreSQL service name and DB
-            - name: SPRING_JPA_HIBERNATE_DDL_AUTO
-              value: update
           resources:
             requests:
               memory: "512Mi"
